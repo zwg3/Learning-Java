@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         //TASK 1 showcase
         Calculator calc = new Calculator();
-        calc.divide(10d, 2d);
+        calc.divide(10, 3);
         calc.add(10L, 2L);
         calc.subtract(10, 2);
         calc.multiply(10, 2);

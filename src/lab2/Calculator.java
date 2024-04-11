@@ -9,12 +9,14 @@ public class Calculator {
 
     public void divide(long a, long b) {
 
-        System.out.println(a / b);
+        double res = ((double)a/b);
+        System.out.println(res);
     }
 
     public void divide(int a, int b) {
 
-        System.out.println(a / b);
+        double res = ((double)a/b);
+        System.out.println(res);
     }
 
     public void add(double a, double b) {
