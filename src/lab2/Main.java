@@ -6,7 +6,7 @@ public class Main {
         Calculator calc = new Calculator();
         calc.divide(10d, 2d);
         calc.add(10L, 2L);
-        calc.subtract(10d, 2d);
+        calc.subtract(10, 2);
         calc.multiply(10, 2);
         //TASK 2 showcase
         Student s = new Student("Nick", 12, 4, 4, 5);
