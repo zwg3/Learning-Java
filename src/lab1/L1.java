@@ -13,7 +13,7 @@ public class L1 {
         System.out.println((29) * (4) * (-15));
 //TASK 3
         int number = 10500;
-        double result = (number / 10d) / 10d;
+        int result = (number / 10) / 10;
         System.out.println(result);
 //TASK 4
         double res = 3.6 * 4.1 * 5.9;
