@@ -55,28 +55,27 @@ public class Arrays1 {
         }
     }
 
-    public void printIsThreeIn(int[] arr) {
+    public Boolean printIsThreeIn(int[] arr) {
         if (arr.length < 2) {
-            return;
+            return false;
         }
 
         if (arr[0] == 3 || arr[arr.length - 1] == 3) {
-            System.out.println(true);
+            return true;
         }
         else {
-            System.out.println(false);
+            return  false;
         }
     }
 
-    public void isThreeOrOneIn(int[] arr) {
+    public Boolean isThreeOrOneIn(int[] arr) {
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 3 || arr[i] == 1) {
-                System.out.println(true);
-                return;
+                return true;
             }
         }
-        System.out.println(false);
+        return  false;
     }
 }
 

@@ -9,14 +9,14 @@ public class Main {
         //PART 1 - TASK 2
         a.printDivisible();
         //PART 1 - TASK 3
-        //a.printIsCorrectSum();
+        a.printIsCorrectSum();
         //PART 1 - TASK 4
-        //a.printIsGreater();
+        a.printIsGreater();
         //PART 1 - TASK 5
-        int[] arr = {3, -3, 7, 100, 5, 4, 2};
-        a.printIsThreeIn(arr);
+        int[] arr = {1, -3, 7, 100, 5, 4, 2};
+        System.out.println(a.printIsThreeIn(arr));
         //PART 1 - TASK 6
-        a.isThreeOrOneIn(arr);
+        System.out.println(a.isThreeOrOneIn(arr));
 
         //PART 2 - TASK 1
         int[] arr2 = {10, 200, 3000};
