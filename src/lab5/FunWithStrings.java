@@ -43,7 +43,7 @@ public class FunWithStrings {
             StringBuilder j = new StringBuilder(i).reverse();
             res.append(j + " ");
         }
-        System.out.println(res);
+        System.out.println(res.toString().trim());
     }
 }
 
