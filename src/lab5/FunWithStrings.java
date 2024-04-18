@@ -13,24 +13,16 @@ public class FunWithStrings {
         System.out.println(i);
     }
 
-    public void isPalindrom(String s) {
+    public void isPalindrome(String s) {
+        s = s.toLowerCase();
         StringBuilder ss = new StringBuilder(s);
         StringBuilder ex = new StringBuilder(s).reverse();
         System.out.println(ss.toString().contentEquals(ex));
     }
 
-    public void censored(String s) {
-
-        StringBuilder res = new StringBuilder();
-
-        for (String j : s.split(" ")) {
-            if (j.equals("бяка")) {
-                res.append(" [вырезано цензурой] ");
-            } else {
-                res.append(j);
-            }
-        }
-        System.out.println(res);
+    public void censored(String message, String wordToReplace, String replacement ) {
+        message = message.replace(wordToReplace, replacement);
+        System.out.println(message);
     }
 
     public void numsOccures(String subString, String string) {
@@ -46,13 +38,12 @@ public class FunWithStrings {
 
     public void invert(String s) {
 
-        String res = "";
+        StringBuilder res = new StringBuilder();
         for (String i : s.split(" ")) {
             StringBuilder j = new StringBuilder(i).reverse();
-            res += j;
-            res += " ";
+            res.append(j + " ");
         }
-        System.out.println(res.trim());
+        System.out.println(res);
     }
 }
 

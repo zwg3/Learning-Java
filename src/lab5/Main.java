@@ -8,12 +8,12 @@ public class Main {
         fun.findLongest(s);
 
         //TASK 2
-        String palindrom = "saippuakivikauppias";
-        fun.isPalindrom(palindrom);
+        String palindrome = "saippuakivikauppias";
+        fun.isPalindrome(palindrome);
 
         //TASK 3
-        String toCensor = "Ты бяка противная!";
-        fun.censored(toCensor);
+        String toCensor = "Ты бяка противная! бяка";
+        fun.censored(toCensor, "бяка", "[вырезано цензурой]");
 
         //TASK 4
         fun.numsOccures("Hello", "Helloworld!HellohiHellohelp");
