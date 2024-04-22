@@ -2,9 +2,9 @@ package lab6.Task1;
 
 public class Client extends Person {
 
-    private String bankName;
+    protected String bankName;
 
-    public Client(String firstName, String lastName, String bankName) {
+    protected Client(String firstName, String lastName, String bankName) {
         super(firstName, lastName);
         this.bankName = bankName;
     }

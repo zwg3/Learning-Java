@@ -2,18 +2,18 @@ package lab6.Task2;
 
 public abstract class Person implements NameData {
 
-    private String firstName;
-    private String lastName;
+    protected String firstName;
+    protected String lastName;
 
-    public String getFirstName() {
+    protected String getFirstName() {
         return firstName;
     }
 
-    public String getLastName() {
+    protected String getLastName() {
         return lastName;
     }
 
-    public Person(String firstName, String lastName) {
+    protected Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }

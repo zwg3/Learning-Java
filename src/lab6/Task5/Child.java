@@ -1,20 +1,15 @@
 package lab6.Task5;
 
+import java.io.IOException;
+
 public class Child extends Parent {
 
-    public String name;
+    protected String name;
 
     @Override
-    public void askInfo() {
+    public void askInfo() throws IOException {
         super.askInfo();
-        s.nextLine();
         System.out.print("Введите имя поользователя ");
-        name = s.nextLine();
+        name = r.readLine();
     }
-
-    public void printInfo(){
-        System.out.println("Возраст пользователя: " + age);
-        System.out.println("Имя пользователя: " + name);
-    }
-
 }

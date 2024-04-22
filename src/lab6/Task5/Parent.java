@@ -1,15 +1,18 @@
 package lab6.Task5;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Parent {
 
-    public Integer age;
-    public Scanner s = new Scanner(System.in);
+    protected Integer age;
+    protected BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
 
-    public void askInfo() {
+    public void askInfo() throws IOException {
         System.out.print("Введите возраст пользователя ");
-        age = s.nextInt();
+        age = Integer.parseInt(r.readLine());
     }
 
 }

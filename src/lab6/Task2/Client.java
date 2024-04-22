@@ -4,7 +4,7 @@ public class Client extends Person {
 
     private String bankName;
 
-    public Client(String firstName, String lastName, String bankName) {
+    protected Client(String firstName, String lastName, String bankName) {
         super(firstName, lastName);
         this.bankName = bankName;
     }
