@@ -6,5 +6,6 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Child c = new Child();
         c.askInfo();
+        c.printRes();
     }
 }

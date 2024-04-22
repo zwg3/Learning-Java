@@ -12,4 +12,9 @@ public class Child extends Parent {
         System.out.print("Введите имя поользователя ");
         name = r.readLine();
     }
+
+    protected void printRes(){
+        System.out.println("Age: " + age);
+        System.out.println("Name: " + name);
+    }
 }
