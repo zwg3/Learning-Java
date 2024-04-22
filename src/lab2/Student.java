@@ -27,7 +27,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "weight = " + name +
+        return "name= " + name +
                 ", age=" + age +
                 ", mathScore=" + mathScore +
                 ", chemistryScore=" + chemistryScore +
