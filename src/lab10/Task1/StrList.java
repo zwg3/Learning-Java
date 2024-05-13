@@ -19,20 +19,13 @@ public class StrList {
     public static ArrayList<String> stringify(String path){
         ArrayList<String> res = new ArrayList<>();
         try (BufferedReader r = getBuffReader(path)) {
-
             String s;
             while ((s = r.readLine()) != null) {
                 res.add(s);
             }
-
-
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-
         return res;
     }
-
-
-
 }
